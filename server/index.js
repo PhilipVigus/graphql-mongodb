@@ -4,6 +4,8 @@ import mongoose from "mongoose";
 import bodyParser from "body-parser";
 import cors from "cors";
 
+import schema from "../graphql/index";
+
 const app = express();
 const PORT = process.env.PORT || "4000";
 const db = "mongodb://127.0.0.1/temp";
@@ -22,6 +24,7 @@ app.use(
   cors(),
   bodyParser.json(),
   graphqlHTTP({
+    schema,
     graphiql: true,
   })
 );

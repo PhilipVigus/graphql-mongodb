@@ -1,7 +1,11 @@
-import { mergeTypes } from "merge-graphql-schemas";
+import { makeExecutableSchema } from "graphql-tools";
 
-import User from "./User/";
+import typeDefs from "./types/";
+import resolvers from "./resolvers/";
 
-const typeDefs = [User];
+const schema = makeExecutableSchema({
+  typeDefs,
+  resolvers,
+});
 
-export default mergeTypes(typeDefs, { all: true });
+export default schema;
