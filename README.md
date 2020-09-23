@@ -66,3 +66,6 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `yarn build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+https://ednsquare.com/story/build-graphql-server-using-node-js-express-mongodb------DXQJt4 - tutorial being followed
+https://flaviocopes.com/how-to-serve-react-from-same-origin/
